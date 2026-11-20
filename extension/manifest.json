@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Inbox Reviews",
+  "version": "0.1.0",
+  "description": "Show your previous PR review and whether the head commit changed in GitHub Notifications.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "github-inbox-reviews@local",
+      "data_collection_permissions": { "required": ["none"] }
+    }
+  },
+  "permissions": ["nativeMessaging"],
+  "background": { "scripts": ["background.js"] },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/notifications*"],
+      "js": ["inbox.js"],
+      "css": ["inbox.css"]
+    }
+  ]
+}
