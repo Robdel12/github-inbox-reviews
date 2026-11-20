@@ -4,6 +4,8 @@ Ever reopen a GitHub notification and realize you already reviewed the PR? This 
 
 ![A demo inbox with fictional PRs showing approval, changes requested, and requests to review again](screenshot.png)
 
+*I generated this screenshot from a mock inbox with fictional PRs to keep my real inbox private.*
+
 **✓** Approved · **!** Changes requested · **…** Commented · **○** No review yet
 
 A **+** means the head commit has changed since your review. Rebases count. A **↻** means GitHub is asking you to review again. Hover over the badge for details.
